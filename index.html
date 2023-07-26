@@ -18,21 +18,22 @@
     
     <nav class="container m-2 ">
       <!-- nav bar for mobile -->
-      <div class="navbar bg-base-100 lg:hidden">
+      <div class="navbar bg-base-100 visible md:hidden lg:hidden">
         <div class="flex-none">
         
         </div>
         <div class="flex-1">
           <img src="./images/logo.png" alt="">
-          <h2 class="text-xl font-bold">Fruit<span class="text-emerald-500">B</span>urst</h2>
+          <h2 class="text-xl font-bold">F<span class="text-green-500">r</span>uit <span class="g-t">B</span>urst</h2>
         </div>
         <div class="flex-none">
           <div class="navbar-start">
             <div class="dropdown">
+
               <label tabindex="0" class="btn btn-ghost btn-circle">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
               </label>
-              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <ul tabindex="0" class=" menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                 <li><a>Home</a></li>
                 <li><a>Shop</a></li>
                 <li><a>About</a></li>
@@ -65,7 +66,7 @@
         </div> 
         <div class="flex-1 gap-5">
           <img src="./images/logo.png" alt="">
-          <h2 class="text-xl font-bold">Fruit<span class="text-emerald-500">B</span>urst</h2>
+          <h2 class="text-xl font-bold">F<span class="text-green-500">r</span>uit<span class="g-t">B</span>urst</h2>
         </div>
         <div class="flex-none gap-2">
           <div class="form-control">
@@ -211,7 +212,7 @@
 </div>
 </section>
 <!-- details part of fruits -->
-<section class="container mt-5 grid grid-rows-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+<section class="container mx-auto mt-5 grid grid-rows-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
   <div class="card w-80 bg-gray-400 shadow-xl">
     <figure class="px-10 pt-10">
       <img src="/images/fruit6.png" alt="apple" class="rounded-xl" />
@@ -399,6 +400,10 @@
     </div>
   </div>
 </section>
+<!-- button parts -->
+<section class="container mx-auto flex justify-center items-center mt-5">
+  <button class="btn bg-[#F85559] text-white">Shop All</button>
+</section>
 <!-- meet team secetion -->
 <section class="container mx-auto mt-5">
   <div class="hero min-h-screen" style="background-image: url(./images/banner1.png);">
@@ -511,9 +516,34 @@
 </section>
 
   </main>
-  <footer>
+
+  <footer class="footer mt-5 footer-center  bg-gray-400 ">
+    <!-- footer-center p-10 bg-gray-400 text-base-content rounded -->
+    <div class=" flex flex-col items-center justify-center text-center md:flex-row lg:flex-row w-72 h-20 gap-5">
+      <img src="./images/logo.png" alt="">
+      <h2 class="text-xl font-bold">Fruit<span class="text-emerald-500">B</span>urst</h2>
+    </div>
     
-  </footer>
+  <div class="grid  grid-col-4 md:grid-cols-3 lg:grid-cols-6 gap-4">
+    <a class="link link-hover">Home</a> 
+    <a class="link link-hover">About Us</a> 
+    <a class="link link-hover">Shop</a> 
+    <a class="link link-hover">All Fruits</a>
+    <a class="link link-hover">Support</a>
+    <a class="link link-hover">My Account</a>
+  </div> 
+  <div>
+    <div class="grid grid-flow-col gap-10">
+      <a><i class="fa-brands fa-twitter  text-[#F85559]"></i></a> 
+      <a><i class="fa-brands fa-facebook   text-[#F85559]"></i></a> 
+      <a><i class="fa-brands fa-linkedin  text-[#F85559]"></i></a>
+      <a><i class="fa-brands fa-instagram  text-[#F85559]"></i></a>
+      <a><i class="fa-brands fa-youtube  text-[#F85559]"></i></a>
+      <a><i class="fa-brands fa-apple  text-[#F85559]"></i></a>
+    </div>
+  </div> 
+  
+</footer>
   
 </body>
 </html>
